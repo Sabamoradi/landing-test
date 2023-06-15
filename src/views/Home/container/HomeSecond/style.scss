@@ -1,0 +1,62 @@
+@import "src/styles/constants.scss";
+
+.h_second_container {
+  padding: 48px 0;
+  background-color: $gray-f3;
+
+  h5 {
+    font-size: 20px;
+    color: $greyish-brown;
+  }
+
+  .h_second_data {
+    margin-top: 32px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    .second_data_wrapper {
+      height: 111px;
+      width: 33%;
+
+      .second_data_item {
+        background-color: $white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .second_data_right{
+            display: flex;
+            align-items: center;
+            .second_special{
+                background-color: $red;
+                height: 25px;
+                font-size: 11px;
+                transform: rotate(90deg);
+                color: $white;
+                width: fit-content;
+                padding: 4px 6px;
+            }
+            .second_text{
+                .second_text_top{
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+                    color: $greyish-brown;
+                    p{
+                        padding-left: 10px;
+                        &:last-child{
+                            padding-right: 10px;
+                        }
+                    }
+
+                }
+            }
+        }
+      }
+    }
+  }
+}
