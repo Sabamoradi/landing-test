@@ -1,7 +1,7 @@
 @import "src/styles/constants.scss";
 
 .h_second_container {
-  padding: 48px 0;
+  padding: 48px 0 24px 0;
   background-color: $gray-f3;
 
   h5 {
@@ -13,48 +13,93 @@
     margin-top: 32px;
     padding: 0;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
     align-items: center;
     margin-bottom: 0;
+    flex-wrap: wrap;
     .second_data_wrapper {
       height: 111px;
-      width: 33%;
+      width: 33.3%;
+      padding: 0 12px;
+      margin-bottom: 24px;
 
       .second_data_item {
         background-color: $white;
+        padding: 0 16px;
         width: 100%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         height: 100%;
 
-        .second_data_right{
-            display: flex;
-            align-items: center;
-            .second_special{
-                background-color: $red;
-                height: 25px;
-                font-size: 11px;
-                transform: rotate(90deg);
-                color: $white;
-                width: fit-content;
-                padding: 4px 6px;
-            }
-            .second_text{
-                .second_text_top{
-                    display: flex;
-                    align-items: center;
-                    font-size: 16px;
-                    color: $greyish-brown;
-                    p{
-                        padding-left: 10px;
-                        &:last-child{
-                            padding-right: 10px;
-                        }
-                    }
-
+        .second_data_right {
+          display: flex;
+          align-items: center;
+          .second_special {
+            background-color: $red;
+            height: 25px;
+            font-size: 11px;
+            transform: rotate(90deg);
+            color: $white;
+            width: fit-content;
+            padding: 4px 6px;
+          }
+          .second_text {
+            .second_text_top {
+              display: flex;
+              align-items: center;
+              font-size: 16px;
+              color: $greyish-brown;
+              p {
+                padding-left: 10px;
+                &:last-child {
+                  padding-right: 10px;
                 }
+              }
             }
+            .second_text_bottom {
+              display: flex;
+              padding-top: 12px;
+              align-items: center;
+              color: $gray-8d;
+              font-size: 13px;
+            }
+          }
+        }
+        .second_data_left {
+          width: 38%;
+          border-right: 2px solid $gray-f3;
+          height: 80%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: relative;
+          &::before,&::after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: $gray-f3;
+            right: -7.8px;
+            border-radius: 50%;
+          }
+          &::before {
+            top: -17.5px;
+          }
+          &::after {
+            bottom: -17.5px;
+          }
+          strong {
+            color: $blue;
+            font-size: 18px;
+            padding-left: 4px;
+          }
+          text-align: center;
+          font-size: 14px;
+          color: $gray-8d;
+          .second_data_line{
+            text-decoration: line-through;
+          }
         }
       }
     }
