@@ -1,5 +1,8 @@
 @import "src/styles/constants.scss";
 
+.gray-bg {
+  background-color: $gray-f3;
+}
 .home-header_container {
   position: relative;
   height: 475px;

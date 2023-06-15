@@ -30,7 +30,7 @@ const HomeSecond = () => {
                     </div>
                   </div>
                   <div className="second_data_left">
-                    <p className={element.special && 'second_data_line'}>{element.special ? element.exactPrice : "قیمت از"}</p>
+                    <p className={element.special ? 'second_data_line':''}>{element.special ? element.exactPrice : "قیمت از"}</p>
                     <p>
                       <strong>{element.priceWithSale}</strong>
                       تومان

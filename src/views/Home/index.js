@@ -1,5 +1,7 @@
 import "./style.scss";
 import HomeSecond from "./container/HomeSecond";
+import HomeThird from "./container/HomeThird";
+
 
 const homeImage = require("../../assets/images/home/home-header.png");
 
@@ -10,7 +12,11 @@ const Home = () => {
         <img src={homeImage} />
         <div className="container home_white_card"></div>
       </div>
+      <div className="gray-bg">
+
       <HomeSecond />
+      <HomeThird/>
+      </div>
     </div>
   );
 };
