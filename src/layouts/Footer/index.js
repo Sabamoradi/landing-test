@@ -1,6 +1,9 @@
 import "./style.scss";
 import { FooterData } from "../../mock";
 import Input from "../../components/Input";
+import { ChevronDown } from "../../assets/icons";
+import { useState } from "react";
+
 const footerImg = [
   {
     id: 1,
@@ -21,14 +24,30 @@ const footerImg = [
 ];
 
 const Footer = () => {
+  const [toggleItem, setToggleItem] = useState(-1);
+
+  const toggleClick = (val) => {
+    if (toggleItem === val) {
+      setToggleItem(-1);
+    } else {
+      setToggleItem(val);
+    }
+  };
+
   return (
     <footer>
       <div className="container footer_wrapper">
         <ul className="footer_right">
           {FooterData.map((el) => {
             return (
-              <li key={el.id}>
-                <p className="footer_title">{el.category}</p>
+              <li
+                key={el.id}
+                className={`${toggleItem === el.id ? "show_item" : ""}`}
+              >
+                <p className="footer_title" onClick={() => toggleClick(el.id)}>
+                  {el.category}
+                  <ChevronDown />
+                </p>
                 {el.items.map((element) => {
                   return (
                     <div id={element.id} className="footer_item">
@@ -49,9 +68,11 @@ const Footer = () => {
           />
           <ul className="img_footer_wrapper">
             {footerImg.map((el) => {
-              return <li className="img_item" key={el.id}>
-                <img src={el.img} />
-              </li>;
+              return (
+                <li className="img_item" key={el.id}>
+                  <img src={el.img} />
+                </li>
+              );
             })}
           </ul>
         </div>
