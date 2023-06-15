@@ -1,7 +1,7 @@
 import "./style.scss";
 import HomeSecond from "./container/HomeSecond";
 import HomeThird from "./container/HomeThird";
-
+import HomeFourth from "./container/HomeFourth";
 
 const homeImage = require("../../assets/images/home/home-header.png");
 
@@ -13,10 +13,10 @@ const Home = () => {
         <div className="container home_white_card"></div>
       </div>
       <div className="gray-bg">
-
-      <HomeSecond />
-      <HomeThird/>
+        <HomeSecond />
+        <HomeThird />
       </div>
+      <HomeFourth />
     </div>
   );
 };

@@ -68,7 +68,7 @@ export const filterHomeHotel = [
     title: "مشهد",
     hotelName: "هتل درویشی مشهد",
     star: 5,
-    img:require('../assets/images/home/third/1.png')
+    img: require("../assets/images/home/third/1.png"),
   },
   {
     id: 2,
@@ -76,7 +76,7 @@ export const filterHomeHotel = [
     title: "کیش",
     hotelName: "هتل شایان",
     star: 4,
-    img:require('../assets/images/home/third/2.png')
+    img: require("../assets/images/home/third/2.png"),
   },
   {
     id: 3,
@@ -84,7 +84,7 @@ export const filterHomeHotel = [
     title: "تهران",
     hotelName: "هتل تهران",
     star: 3,
-    img:require('../assets/images/home/third/3.png')
+    img: require("../assets/images/home/third/3.png"),
   },
   {
     id: 4,
@@ -92,7 +92,7 @@ export const filterHomeHotel = [
     title: "اصفهان",
     hotelName: "هتل اصفهان",
     star: 4,
-    img:require('../assets/images/home/third/4.png')
+    img: require("../assets/images/home/third/4.png"),
   },
   {
     id: 5,
@@ -100,7 +100,7 @@ export const filterHomeHotel = [
     title: "شیراز",
     hotelName: "هتل شیراز",
     star: 5,
-    img:require('../assets/images/home/third/5.png')
+    img: require("../assets/images/home/third/5.png"),
   },
   {
     id: 6,
@@ -108,7 +108,7 @@ export const filterHomeHotel = [
     title: "شیراز",
     hotelName: "هتل شاه عباس",
     star: 5,
-    img:require('../assets/images/home/third/3.png')
+    img: require("../assets/images/home/third/3.png"),
   },
   {
     id: 7,
@@ -116,7 +116,7 @@ export const filterHomeHotel = [
     title: "کیش",
     hotelName: "هتل ترنج",
     star: 5,
-    img:require('../assets/images/home/third/2.png')
+    img: require("../assets/images/home/third/2.png"),
   },
   {
     id: 8,
@@ -124,7 +124,7 @@ export const filterHomeHotel = [
     title: "کیش",
     hotelName: "هتل ارم",
     star: 5,
-    img:require('../assets/images/home/third/1.png')
+    img: require("../assets/images/home/third/1.png"),
   },
   {
     id: 9,
@@ -132,7 +132,7 @@ export const filterHomeHotel = [
     title: "اصفهان",
     hotelName: "هتل معروف",
     star: 4,
-    img:require('../assets/images/home/third/3.png')
+    img: require("../assets/images/home/third/3.png"),
   },
   {
     id: 10,
@@ -140,6 +140,69 @@ export const filterHomeHotel = [
     title: "مشهد",
     hotelName: "هتل مشهد",
     star: 5,
-    img:require('../assets/images/home/third/4.png')
+    img: require("../assets/images/home/third/4.png"),
+  },
+];
+
+export const HighTrafficDestinations = [
+  {
+    id: 1,
+    img: require("../assets/images/home/fourth/1.png"),
+    title: "هتل‌های شیراز",
+  },
+  {
+    id: 2,
+    img: require("../assets/images/home/fourth/2.png"),
+    title: "هتل‌های کیش",
+  },
+  {
+    id: 3,
+    img: require("../assets/images/home/fourth/3.png"),
+    title: "هتل‌های مشهد",
+  },
+  {
+    id: 4,
+    img: require("../assets/images/home/fourth/4.png"),
+    title: "هتل‌های تهران",
+  },
+  {
+    id: 5,
+    img: require("../assets/images/home/fourth/5.png"),
+    title: "هتل‌های شیراز",
+  },
+  {
+    id: 6,
+    img: require("../assets/images/home/fourth/6.png"),
+    title: "هتل‌های کیش",
+  },
+  {
+    id: 7,
+    img: require("../assets/images/home/fourth/7.png"),
+    title: "هتل‌‌های مشهد",
+  },
+  {
+    id: 8,
+    img: require("../assets/images/home/fourth/8.png"),
+    title: "هتل‌های تهران",
+  },
+  {
+    id: 9,
+    img: require("../assets/images/home/fourth/9.png"),
+    title: "هتل‌های شیراز",
+  },
+  {
+    id: 10,
+    img: require("../assets/images/home/fourth/10.png"),
+    title: "هتل‌های کیش",
+  },
+  {
+    id: 11,
+    img: require("../assets/images/home/fourth/11.png"),
+    title: "هتل‌‌های مشهد",
+  },
+  {
+    id: 12,
+    img: require("../assets/images/home/fourth/12.png"),
+    title: "هتل‌های تهران",
   },
 ];
