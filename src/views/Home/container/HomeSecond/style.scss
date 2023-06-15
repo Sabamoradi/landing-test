@@ -41,6 +41,7 @@
             transform: rotate(90deg);
             color: $white;
             width: fit-content;
+            text-align: center;
             padding: 4px 6px;
           }
           .second_text {
@@ -62,6 +63,7 @@
               align-items: center;
               color: $gray-8d;
               font-size: 13px;
+              white-space: nowrap;
             }
           }
         }
@@ -104,3 +106,23 @@
     }
   }
 }
+@media (max-width: 1199px) {
+  .second_data_left {
+    font-size: 12px !important;
+    strong {
+      font-size: 14px !important;
+    }
+  }
+  .second_text_top {
+    font-size: 12px !important;
+  }
+  .second_text_bottom{
+    font-size: 11px !important;
+  }
+}
+@media (max-width: 992px) {
+  .second_data_wrapper{
+    width: 50% !important;
+  }
+}
+
