@@ -72,3 +72,14 @@ footer {
     }
   }
 }
+@media (max-width: 767px) {
+ .footer_right {
+  flex-wrap: wrap;
+  li{
+    width: 100% !important;
+  }
+ }
+ footer {
+  padding: 0 24px;
+ }
+}

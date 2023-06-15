@@ -1,17 +1,14 @@
-import "./style.scss";
 import { ShopIcon, UserIcon } from "../../assets/icons";
+import HeaderDesktop from "../../components/HeaderDesktop";
+import HeaderMobile from "../../components/HeadeMobile";
 
 const menuItems = [
   {
     id: 1,
-    title: "تست برنامه‌نویسی",
-  },
-  {
-    id: 2,
     title: "بلیط هواپیما",
   },
   {
-    id: 3,
+    id: 2,
     title: "رزرو هتل",
   },
 ];
@@ -30,33 +27,10 @@ const menuLeftItems = [
 
 const Header = () => {
   return (
-    <div className="header-container">
-      <div className="container">
-        <div className="header-items">
-          <ul className="header-right">
-            {menuItems.map((el) => {
-              return (
-                <li className="header-item" key={el.id}>
-                  <p>{el.title}</p>
-                </li>
-              );
-            })}
-          </ul>
-          <ul className="header-left">
-            {menuLeftItems.map((element) => {
-              return (
-                <li key={element.id} className="left-item_wrapper">
-                  <div className="left-item">
-                    {element.icon}
-                    <p>{element.title}</p>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </div>
-    </div>
+    <>
+      <HeaderDesktop menuItems={menuItems} menuLeftItems={menuLeftItems} />
+      <HeaderMobile menuLeftItems={menuLeftItems} menuItems={menuItems} />
+    </>
   );
 };
 

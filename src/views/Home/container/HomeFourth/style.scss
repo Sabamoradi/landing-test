@@ -46,7 +46,15 @@
   }
 }
 @media (max-width: 992px) {
-    .home_f_item{
-        width: 50% !important;
-    }
+  .home_f_item {
+    width: 50% !important;
+  }
+}
+@media (max-width: 767px) {
+  .home_f_item {
+    width: 100% !important;
+  }
+  .home_f_container {
+    padding: 48px 24px 24px 24px;
+  }
 }

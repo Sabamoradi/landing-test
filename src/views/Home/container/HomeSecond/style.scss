@@ -125,4 +125,11 @@
     width: 50% !important;
   }
 }
-
+@media (max-width: 767px) {
+  .second_data_wrapper{
+    width: 100% !important;
+  }
+  .h_second_container{
+    padding: 48px 20px 24px 20px;
+  }
+}

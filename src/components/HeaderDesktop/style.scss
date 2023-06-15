@@ -16,14 +16,14 @@
       align-items: center;
       margin: 0;
     }
+    .header-logo {
+      font-size: 20px;
+    }
     .header-right {
       .header-item {
         padding: 0 56px;
         font-size: 14px;
         color: $greyish-brown;
-        &:first-child {
-          font-size: 20px;
-        }
       }
     }
     .left-item_wrapper {
@@ -40,5 +40,32 @@
         }
       }
     }
+  }
+}
+@media (max-width: 991px) {
+  .header-item {
+    padding: 0 10px !important;
+    font-size: 15px !important;
+  }
+  .header-logo {
+    font-size: 16px !important;
+  }
+}
+@media (min-width: 768px) {
+  .desktop_header {
+    display: block;
+    .container {
+      height: 100%;
+      .header-items {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .desktop_header {
+    display: none;
   }
 }
