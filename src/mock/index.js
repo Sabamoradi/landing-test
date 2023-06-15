@@ -67,48 +67,79 @@ export const filterHomeHotel = [
     category: "mashhad",
     title: "مشهد",
     hotelName: "هتل درویشی مشهد",
-    start: 5,
+    star: 5,
+    img:require('../assets/images/home/third/1.png')
   },
   {
     id: 2,
     category: "kish",
     title: "کیش",
     hotelName: "هتل شایان",
-    start: 4,
+    star: 4,
+    img:require('../assets/images/home/third/2.png')
   },
   {
     id: 3,
     category: "tehran",
     title: "تهران",
     hotelName: "هتل تهران",
-    start: 3,
+    star: 3,
+    img:require('../assets/images/home/third/3.png')
   },
   {
     id: 4,
     category: "esfehan",
     title: "اصفهان",
     hotelName: "هتل اصفهان",
-    start: 4,
+    star: 4,
+    img:require('../assets/images/home/third/4.png')
   },
   {
     id: 5,
     category: "shiraz",
     title: "شیراز",
     hotelName: "هتل شیراز",
-    start: 5,
+    star: 5,
+    img:require('../assets/images/home/third/5.png')
   },
   {
     id: 6,
     category: "shiraz",
     title: "شیراز",
     hotelName: "هتل شاه عباس",
-    start: 5,
+    star: 5,
+    img:require('../assets/images/home/third/3.png')
   },
   {
     id: 7,
     category: "kish",
     title: "کیش",
     hotelName: "هتل ترنج",
-    start: 5,
+    star: 5,
+    img:require('../assets/images/home/third/2.png')
+  },
+  {
+    id: 8,
+    category: "kish",
+    title: "کیش",
+    hotelName: "هتل ارم",
+    star: 5,
+    img:require('../assets/images/home/third/1.png')
+  },
+  {
+    id: 9,
+    category: "esfehan",
+    title: "اصفهان",
+    hotelName: "هتل معروف",
+    star: 4,
+    img:require('../assets/images/home/third/3.png')
+  },
+  {
+    id: 10,
+    category: "mashhad",
+    title: "مشهد",
+    hotelName: "هتل مشهد",
+    star: 5,
+    img:require('../assets/images/home/third/4.png')
   },
 ];
