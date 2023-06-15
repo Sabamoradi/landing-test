@@ -1,0 +1,21 @@
+@import "src/styles/constants.scss";
+.header-container {
+  height: 72px;
+  background-color: $white;
+  .header-items{
+    display: flex;
+    .header-right{
+      display: flex;
+      list-style: none;
+      align-items: center;
+      .header-item{
+        padding: 0 56px;
+        font-size: 14px;
+        color: $greyish-brown;
+        &:first-child{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

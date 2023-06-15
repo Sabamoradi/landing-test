@@ -5,4 +5,11 @@ html,
 body {
   font-family: IRANYekanNum !important;
   box-sizing: border-box;
+  direction: rtl;
+}
+.container{
+  margin: 0 auto;
+}
+p{
+  margin: 0;
 }
