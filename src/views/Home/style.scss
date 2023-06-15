@@ -1,0 +1,23 @@
+@import "src/styles/constants.scss";
+
+.home-header_container {
+  position: relative;
+  height: 475px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .home_white_card {
+    height: 181px;
+    position: relative;
+    width: 100%;
+    background-color: $white;
+    padding: 13px 13px 18px 16px;
+  }
+}
