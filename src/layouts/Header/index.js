@@ -1,4 +1,5 @@
-import './style.scss'
+import "./style.scss";
+import { ShopIcon, UserIcon } from "../../assets/icons";
 
 const menuItems = [
   {
@@ -14,6 +15,18 @@ const menuItems = [
     title: "رزرو هتل",
   },
 ];
+const menuLeftItems = [
+  {
+    id: 1,
+    icon: <ShopIcon />,
+    title: "پیگیری خرید",
+  },
+  {
+    id: 2,
+    icon: <UserIcon />,
+    title: "ورود / ثبت‌ نام",
+  },
+];
 
 const Header = () => {
   return (
@@ -23,13 +36,24 @@ const Header = () => {
           <ul className="header-right">
             {menuItems.map((el) => {
               return (
-                <li className='header-item' key={el.id}>
+                <li className="header-item" key={el.id}>
                   <p>{el.title}</p>
                 </li>
               );
             })}
           </ul>
-          <div className="header-left"></div>
+          <ul className="header-left">
+            {menuLeftItems.map((element) => {
+              return (
+                <li key={element.id} className="left-item_wrapper">
+                  <div className="left-item">
+                    {element.icon}
+                    <p>{element.title}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </div>

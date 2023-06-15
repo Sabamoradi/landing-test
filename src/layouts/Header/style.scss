@@ -2,18 +2,37 @@
 .header-container {
   height: 72px;
   background-color: $white;
-  .header-items{
+  .header-items {
     display: flex;
-    .header-right{
-      display: flex;
+    justify-content: space-between;
+    .header-right,
+    .header-left {
+      padding: 0;
       list-style: none;
+      display: flex;
       align-items: center;
-      .header-item{
+    }
+    .header-right {
+      .header-item {
         padding: 0 56px;
         font-size: 14px;
         color: $greyish-brown;
-        &:first-child{
+        &:first-child {
           font-size: 20px;
+        }
+      }
+    }
+    .left-item_wrapper {
+      padding: 0 8px;
+      .left-item {
+        display: flex;
+        align-items: center;
+        padding: 8px 10px;
+        border: solid 1px $gray-e;
+        p {
+          padding-right: 12px;
+          color: $black-16;
+          font-size: 14px;
         }
       }
     }
