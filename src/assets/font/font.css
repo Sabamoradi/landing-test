@@ -1,0 +1,79 @@
+@font-face {
+  font-family: IRANYekanNum;
+  font-style: normal;
+  font-weight: bold;
+  src: url("IRANYekanwebboldfanum.eot");
+  src: url("IRANYekanwebboldfanum.eot?#iefix") format("embedded-opentype"),
+    url("IRANYekanwebboldfanum.woff") format("woff"),
+    url("IRANYekanwebboldfanum.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANYekanNum;
+  font-style: normal;
+  font-weight: 100;
+  src: url("IRANYekanwebthinfanum.eot");
+  src: url("IRANYekanwebthinfanum.eot?#iefix") format("embedded-opentype"),
+    url("IRANYekanwebthinfanum.woff") format("woff"),
+    url("IRANYekanwebthinfanum.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANYekanNum;
+  font-style: normal;
+  font-weight: 300;
+  src: url("IRANYekanweblightfanum.eot");
+  src: url("IRANYekanweblightfanum.eot?#iefix") format("embedded-opentype"),
+    url("IRANYekanweblightfanum.woff") format("woff"),
+    url("iranyekanweblightfanum.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANYekanNum;
+  font-style: normal;
+  font-weight: normal;
+  src: url("IRANYekanwebregularfanum.eot");
+  src: url("IRANYekanwebregularfanum.eot?#iefix") format("embedded-opentype"),
+    url("IRANYekanwebregularfanum.woff") format("woff"),
+    url("IRANYekanwebregularfanum.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANYekanNum;
+  font-style: normal;
+  font-weight: 500;
+  src: url("IRANYekanwebmediumfanum.eot");
+  src: url("IRANYekanwebmediumfanum.eot?#iefix") format("embedded-opentype"),
+    url("IRANYekanwebmediumfanum.woff") format("woff"),
+    url("IRANYekanwebmediumfanum.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANYekanNum;
+  font-style: normal;
+  font-weight: 800;
+  src: url("IRANYekanwebextraboldfanum.eot");
+  src: url("IRANYekanwebextraboldfanum.eot?#iefix") format("embedded-opentype"),
+    url("IRANYekanwebextraboldfanum.woff") format("woff"),
+    url("IRANYekanwebextraboldfanum.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANYekanNum;
+  font-style: normal;
+  font-weight: 850;
+  src: url("IRANYekanwebblackfanum.eot");
+  src: url("IRANYekanwebblackfanum.eot?#iefix") format("embedded-opentype"),
+    url("IRANYekanwebblackfanum.woff") format("woff"),
+    url("IRANYekanwebblackfanum.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANYekanNum;
+  font-style: normal;
+  font-weight: 900;
+  src: url("IRANYekanwebextrablackfanum.eot");
+  src: url("IRANYekanwebextrablackfanum.eot?#iefix") format("embedded-opentype"),
+    url("IRANYekanwebextrablackfanum.woff") format("woff"),
+    url("IRANYekanwebextrablackfanum.ttf") format("truetype");
+}
