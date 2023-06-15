@@ -1,4 +1,5 @@
 import Header from "../Header";
+import Footer from "../Footer";
 
 const MainLayout = (props) => {
   const { children } = props;
@@ -6,6 +7,7 @@ const MainLayout = (props) => {
     <div className="container-fluid">
       <Header />
       {children}
+      <Footer />
     </div>
   );
 };

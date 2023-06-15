@@ -1,0 +1,25 @@
+@import "src/styles/constants.scss";
+
+.input_wrapper{
+    width: 100%;
+    display: flex;
+    border: solid 1px $gray-e;
+    
+    input{
+        font-family: IRANYekanNum !important;
+        padding: 10px 12px;
+        border-radius: 4px;
+        width: 100%;
+        border-color: transparent;
+    }
+    .btn_input{
+        font-size: 14px;
+        background-color: transparent;
+        border-color: transparent;
+        font-family: IRANYekanNum !important;
+        &:focus-visible{
+            outline: none !important;
+            border-color: none;
+        }
+    }
+}

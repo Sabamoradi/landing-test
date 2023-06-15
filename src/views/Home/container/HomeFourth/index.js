@@ -9,7 +9,7 @@ const HomeFourth = () => {
         <ul className="home_f_items">
           {HighTrafficDestinations.map((el) => {
             return (
-              <li className="home_f_item">
+              <li key={el.id} className="home_f_item">
                 <div className="home_f_wrapper">
                     <img src={el.img} />
                     <p>{el.title}</p>
