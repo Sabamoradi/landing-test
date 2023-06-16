@@ -1,0 +1,131 @@
+@import "src/styles/constants.scss";
+
+.hotel_card-container {
+  width: 100%;
+  //   height: 187px;
+  margin-bottom: 16px;
+  .card_wrapper {
+    background-color: $white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    .card_right {
+      display: flex;
+      width: 72%;
+      border-left: 1px solid $gray-e;
+      padding-left: 10px;
+      .card_right_wrapper {
+        width: 100%;
+        display: flex;
+        .card_top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        img {
+          width: 262px;
+          height: 100%;
+        }
+        .card-text {
+          padding: 24px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 50%;
+          .name {
+            font-size: 16px;
+            font-weight: bold;
+            color: $greyish-brown;
+          }
+          .card_bottom {
+            font-size: 12px;
+            .address {
+              color: $gray-8d;
+            }
+            .link {
+              color: $blue;
+              padding-top: 3px;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              svg {
+                path {
+                  fill: $blue !important;
+                }
+                transform: rotate(90deg);
+              }
+            }
+          }
+        }
+      }
+    }
+    .card_left {
+      padding: 0 10px;
+      width: 28%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .card_left-price {
+        font-size: 12px;
+        color: $gray-ef;
+        margin-bottom: 12px;
+      }
+      .card_exact_price {
+        font-size: 12px;
+        color: $gray-ef;
+        margin-bottom: 18px;
+        strong {
+          color: $blue;
+          font-size: 18px;
+          padding-left: 4px;
+        }
+      }
+      .card_left_btn {
+        background-color: $blue;
+        color: $white;
+        font-size: 14px;
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 4px;
+        text-align: center;
+        border: 1px solid $blue;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background-color: $white;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .card-text {
+    width: 100% !important;
+  }
+  .card_left {
+    width: 100% !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    .card_left-price {
+      margin-bottom: 0 !important;
+    }
+    .card_left_btn {
+      width: 40% !important;
+    }
+  }
+}
+@media (max-width: 460px) {
+  .card_left_btn,
+  .card_exact_price,
+  .card_left-price {
+    font-size: 10px !important;
+  }
+  .card_exact_price {
+    strong {
+      font-size: 14px !important;
+    }
+  }
+}

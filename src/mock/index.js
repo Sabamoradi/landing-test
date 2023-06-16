@@ -302,3 +302,59 @@ export const FooterData = [
     ],
   },
 ];
+export const HotelData = [
+  {
+    id:1,
+    img:require('../assets/images/Hotel/list-1.png'),
+    hotelName:'هتل الماس ۲ مشهد',
+    rate:5,
+    address:'مشهد، خیابان امام رضا، امام رضا۲۰',
+    days:4,
+    price:'۵۸۳,۰۰۰'
+  },
+  {
+    id:2,
+    img:require('../assets/images/Hotel/list-1.png'),
+    hotelName:'هتل قصر خورشید',
+    rate:5,
+    address:'مشهد، خیابان امام رضا، امام رضا۲۰',
+    days:4,
+    price:'۵۸۳,۰۰۰'
+  },
+  {
+    id:3,
+    img:require('../assets/images/Hotel/list-1.png'),
+    hotelName:'هتل پرهام',
+    rate:5,
+    address:'مشهد، خیابان امام رضا، امام رضا۲۰',
+    days:4,
+    price:'۵۸۳,۰۰۰'
+  },
+  {
+    id:4,
+    img:require('../assets/images/Hotel/list-1.png'),
+    hotelName:'هتل خانه سبز',
+    rate:5,
+    address:'مشهد، خیابان امام رضا، امام رضا۲۰',
+    days:4,
+    price:'۵۸۳,۰۰۰'
+  },
+  {
+    id:5,
+    img:require('../assets/images/Hotel/list-1.png'),
+    hotelName:'مسافر خانه علمدار',
+    rate:5,
+    address:'مشهد، خیابان امام رضا، امام رضا۲۰',
+    days:4,
+    price:'۵۸۳,۰۰۰'
+  },
+  {
+    id:6,
+    img:require('../assets/images/Hotel/list-1.png'),
+    hotelName:'مسافر خانه علمدار',
+    rate:5,
+    address:'مشهد، خیابان امام رضا، امام رضا۲۰',
+    days:4,
+    price:'۵۸۳,۰۰۰'
+  },
+]

@@ -1,0 +1,85 @@
+@import "src/styles/constants.scss";
+
+.hotel_container {
+  background-color: $gray-f3;
+  .hotel_wrapper {
+    padding: 32px 0 48px 0;
+    display: flex;
+    align-items: center;
+
+    .hotel_right {
+      width: 35%;
+    }
+    .hotel_left {
+      width: 65%;
+      .hotel_left_title {
+        font-size: 20px;
+        font-weight: bold;
+        color: $greyish-brown;
+      }
+      .hotel_left_result {
+        display: flex;
+        .hotel-result_right {
+          display: flex;
+          font-size: 14px;
+          color: $greyish-brown;
+        }
+      }
+      .hotel_data-wrapper {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .hotel_left {
+    width: 70% !important;
+  }
+  .hotel_right {
+    width: 30% !important;
+  }
+}
+@media (max-width: 991px) {
+  .hotel_left {
+    width: 100% !important;
+  }
+  .hotel_right {
+    display: none;
+  }
+}
+@media (min-width: 592px) and (max-width: 767px) {
+  .hotel_left {
+    width: 70% !important;
+  }
+}
+@media (max-width: 767px) {
+  .hotel_wrapper {
+    justify-content: center;
+    .card_right {
+      width: 100% !important;
+      padding-left: 0 !important;
+      img {
+        width: 100% !important;
+      }
+    }
+    .hotel_left {
+      .card_wrapper {
+        flex-direction: column;
+        .card_right {
+          flex-direction: column;
+          border-left: none !important;
+          .card_right_wrapper {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 591px) {
+  .hotel_left {
+    padding: 0 20px;
+    width: 100% !important;
+  }
+}

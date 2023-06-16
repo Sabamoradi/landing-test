@@ -7,7 +7,7 @@ const MainLayout = (props) => {
     <div className="container-fluid">
       <Header />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
