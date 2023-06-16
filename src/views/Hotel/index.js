@@ -7,10 +7,14 @@ import { useState } from "react";
 import CheckBox from "../../components/chekBox";
 import { hotelStarFilter, hotelType } from "../../configs/enum";
 import AllFilter from "../../components/container/AllFilter";
+import { useLocation } from "react-router-dom";
 
 const Hotel = () => {
   const [toggleItem, setToggleItem] = useState(-1);
   const [toggleMenu, setToggleMenu] = useState(false);
+  let userId = useLocation()
+  console.log(userId);
+  
 
   const checkToggle = (val) => {
     if (val === toggleItem) {
@@ -23,7 +27,7 @@ const Hotel = () => {
     <div className="hotel_container">
       <div className="hotel_filter_top">
         <div className="container">
-          <AllFilter />
+          <AllFilter showItem={userId.search ? false : true} />
         </div>
       </div>
       <div className="container">
