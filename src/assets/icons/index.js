@@ -4,6 +4,7 @@ import { ReactComponent as PlaneFill } from "./plane-fill.svg";
 import { ReactComponent as StarIcon } from "./star.svg";
 import { ReactComponent as ChevronDown } from "./chevron-down.svg";
 import {ReactComponent as MenuIcon} from './menu.svg';
-import {ReactComponent as MarkIcon} from './mark.svg'
+import {ReactComponent as MarkIcon} from './mark.svg';
+import {ReactComponent as SearchIcon} from './search.svg'
 
-export { ShopIcon, UserIcon, PlaneFill, StarIcon, ChevronDown , MenuIcon , MarkIcon };
+export { ShopIcon, UserIcon, PlaneFill, StarIcon, ChevronDown , MenuIcon , MarkIcon , SearchIcon };
