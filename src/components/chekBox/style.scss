@@ -1,0 +1,8 @@
+@import "src/styles/constants.scss";
+
+.check-box_container {
+    width: 18px;
+    height: 18px;
+    border: 1px solid $gray-cs;
+    border-radius: 4px;
+}

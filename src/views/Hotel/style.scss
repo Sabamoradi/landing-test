@@ -34,7 +34,8 @@
           padding: 15px;
           height: 40px;
           overflow: hidden;
-          &.open{
+
+          &.open {
             height: fit-content;
           }
           .title {
@@ -45,8 +46,16 @@
             justify-content: space-between;
             align-items: center;
           }
-          .hotel_filter-item{
+          .hotel_filter-item {
             padding-top: 16px;
+            .filter-item_data {
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+              p {
+                padding:10px 12px 10px 0;
+              }
+            }
           }
         }
       }

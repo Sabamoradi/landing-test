@@ -1,5 +1,5 @@
 import "./style.scss";
-import { FooterData } from "../../mock";
+import { FooterData } from "../../configs/data";
 import Input from "../../components/Input";
 import { ChevronDown } from "../../assets/icons";
 import { useState } from "react";
