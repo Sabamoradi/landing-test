@@ -6,18 +6,18 @@ const HeaderDesktop = (props) => {
     <div className="header-container desktop_header">
       <div className="container">
         <div className="header-items">
-          <div className="header-logo">
-          تست برنامه‌نویسی
+          <div className="header_right-wrapper">
+            <div className="header-logo">تست برنامه‌نویسی</div>
+            <ul className="header-right">
+              {menuItems.map((el) => {
+                return (
+                  <li className="header-item" key={el.id}>
+                    <p>{el.title}</p>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
-          <ul className="header-right">
-            {menuItems.map((el) => {
-              return (
-                <li className="header-item" key={el.id}>
-                  <p>{el.title}</p>
-                </li>
-              );
-            })}
-          </ul>
           <ul className="header-left">
             {menuLeftItems.map((element) => {
               return (

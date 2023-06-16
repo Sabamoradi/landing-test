@@ -38,19 +38,19 @@ const Footer = () => {
     <footer>
       <div className="container footer_wrapper">
         <ul className="footer_right">
-          {FooterData.map((el) => {
+          {FooterData.map((el, index) => {
             return (
               <li
-                key={el.id}
+                key={`${index}-footerTitle`}
                 className={`${toggleItem === el.id ? "show_item" : ""}`}
               >
                 <p className="footer_title" onClick={() => toggleClick(el.id)}>
                   {el.category}
                   <ChevronDown />
                 </p>
-                {el.items.map((element) => {
+                {el.items.map((element, index) => {
                   return (
-                    <div id={element.id} className="footer_item">
+                    <div key={element.id} className="footer_item">
                       {element.title}
                     </div>
                   );
@@ -67,9 +67,9 @@ const Footer = () => {
             btnTitle={"ثبت"}
           />
           <ul className="img_footer_wrapper">
-            {footerImg.map((el) => {
+            {footerImg.map((el, index) => {
               return (
-                <li className="img_item" key={el.id}>
+                <li className="img_item" key={`${index}-footerimg`}>
                   <img src={el.img} />
                 </li>
               );

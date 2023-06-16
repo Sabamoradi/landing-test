@@ -67,7 +67,7 @@ export const filterHomeHotel = [
     category: "mashhad",
     title: "مشهد",
     hotelName: "هتل درویشی مشهد",
-    star: 5,
+    star: 1,
     img: require("../assets/images/home/third/1.png"),
   },
   {
@@ -107,7 +107,7 @@ export const filterHomeHotel = [
     category: "shiraz",
     title: "شیراز",
     hotelName: "هتل شاه عباس",
-    star: 5,
+    star: 1,
     img: require("../assets/images/home/third/3.png"),
   },
   {
@@ -131,7 +131,7 @@ export const filterHomeHotel = [
     category: "esfehan",
     title: "اصفهان",
     hotelName: "هتل معروف",
-    star: 4,
+    star: 5,
     img: require("../assets/images/home/third/3.png"),
   },
   {
@@ -139,7 +139,7 @@ export const filterHomeHotel = [
     category: "mashhad",
     title: "مشهد",
     hotelName: "هتل مشهد",
-    star: 5,
+    star: 2,
     img: require("../assets/images/home/third/4.png"),
   },
 ];
@@ -240,19 +240,19 @@ export const FooterData = [
     category: "شرکت‌ ما",
     items: [
       {
-        id: 1,
+        id: 11,
         title: "درباره ما",
       },
       {
-        id: 2,
+        id: 21,
         title: "تماس با ما",
       },
       {
-        id: 3,
+        id: 31,
         title: "مجله گردشگری",
       },
       {
-        id: 4,
+        id: 41,
         title: "فرصت های شغلی",
       },
     ],
@@ -262,19 +262,19 @@ export const FooterData = [
     category: "اطلاعات تکمیلی",
     items: [
       {
-        id: 1,
+        id: 21,
         title: "قوانین و مقررات",
       },
       {
-        id: 2,
+        id: 22,
         title: "حقوق مسافر و سامانه شکایات",
       },
       {
-        id: 3,
+        id: 23,
         title: "پرسش و پاسخ",
       },
       {
-        id: 4,
+        id: 24,
         title: "راهنمای استرداد بلیط",
       },
     ],
@@ -284,19 +284,19 @@ export const FooterData = [
     category: "خدمات",
     items: [
       {
-        id: 1,
+        id: 31,
         title: "بلیط هواپیما داخلی",
       },
       {
-        id: 2,
+        id: 32,
         title: "بلیط هواپیما خارجی",
       },
       {
-        id: 3,
+        id: 33,
         title: "رزرو هتل داخلی",
       },
       {
-        id: 4,
+        id: 34,
         title: "رزرو هتل خارجی",
       },
     ],

@@ -11,6 +11,14 @@ const HomeThird = () => {
   };
   const filterData = filterHomeHotel.filter((el) => el.category === selectItem);
 
+  const starItem = (val) => {
+    const list = [];
+    for (let i = 0; i < val; i++) {
+      list.push(<StarIcon key={i} />);
+    }
+    return list;
+  };
+
   return (
     <div className="home_t_container">
       <div className="container">
@@ -28,10 +36,7 @@ const HomeThird = () => {
                   <img src={el.img} />
                   <div className="result_text">
                     <p>{el.hotelName}</p>
-                    <StarIcon />
-                    <StarIcon />
-                    <StarIcon />
-                    <StarIcon />
+                    {starItem(el.star)}
                   </div>
                 </div>
               </div>

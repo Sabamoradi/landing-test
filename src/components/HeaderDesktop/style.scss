@@ -8,6 +8,10 @@
   .header-items {
     display: flex;
     justify-content: space-between;
+    .header_right-wrapper{
+      display: flex;
+      align-items: center;
+    }
     .header-right,
     .header-left {
       padding: 0;
