@@ -6,6 +6,7 @@ import Input from "../../components/Input";
 import { useState } from "react";
 import CheckBox from "../../components/chekBox";
 import { hotelStarFilter, hotelType } from "../../configs/enum";
+import AllFilter from "../../components/container/AllFilter";
 
 const Hotel = () => {
   const [toggleItem, setToggleItem] = useState(-1);
@@ -20,9 +21,14 @@ const Hotel = () => {
   };
   return (
     <div className="hotel_container">
+      <div className="hotel_filter_top">
+        <div className="container">
+          <AllFilter />
+        </div>
+      </div>
       <div className="container">
         <div className="hotel_wrapper">
-          <div className={`hotel_right ${toggleMenu ? 'open-filter':''}`}>
+          <div className={`hotel_right ${toggleMenu ? "open-filter" : ""}`}>
             <div className="hotel_right-wrapper">
               <div className="hotel_right-title-m">
                 <h6>فیلتر کردن نتایج</h6>

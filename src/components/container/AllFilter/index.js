@@ -30,7 +30,7 @@ const AllFilter = () => {
         </div>
         <div className="input-card">
           <Button text="جستجو" backgroundColor={"#ff7913"} textColor="#fff" height="42" />
-        </div>
+        </div> 
       </div>
     </div>
   );

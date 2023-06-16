@@ -2,6 +2,10 @@
 
 .hotel_container {
   background-color: $gray-f3;
+  .hotel_filter_top{
+    background-color: $white;
+    padding-bottom: 12px;
+  }
   .hotel_wrapper {
     padding: 32px 0 48px 0;
     display: flex;
