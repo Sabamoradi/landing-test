@@ -8,9 +8,24 @@ body {
   direction: rtl;
   margin: 0;
 }
-.container{
+.container {
   margin: 0 auto;
 }
-p,h5{
+p,
+h5 {
   margin: 0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
 }
