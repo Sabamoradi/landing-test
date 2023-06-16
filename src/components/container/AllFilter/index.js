@@ -1,17 +1,26 @@
 import "./style.scss";
 import Input from "../../../components/Input";
 import Button from "../../Button";
+import { useState } from "react";
 
 const AllFilter = () => {
+  const [radioBox,setRadioBox] = useState(-1)
+  const clickRadio = (val) =>{
+    if(radioBox === val){
+      setRadioBox(-1)
+    }else{
+      setRadioBox(val)
+    }
+  }
   return (
     <div className="filter_wrapper">
       <ul className="white_card_top">
-        <li className="white-top_item">
-          <span></span>
+        <li className="white-top_item" onClick={()=>clickRadio(1)}>
+          <span className={`${radioBox === 1 ? 'checked' :''}`}></span>
           <p>یک طرفه</p>
         </li>
-        <li className="white-top_item">
-          <span></span>
+        <li className="white-top_item" onClick={()=>clickRadio(2)}>
+          <span className={`${radioBox === 2 ? 'checked' :''}`}></span>
           <p>رفت و برگشت</p>
         </li>
       </ul>

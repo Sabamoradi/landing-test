@@ -1,8 +1,13 @@
 import "./style.scss";
 import { PlaneFill } from "../../../../assets/icons";
 import { suggestedFlight } from "../../../../mock";
+import { useNavigate } from 'react-router-dom';
 
 const HomeSecond = () => {
+  const navigate = useNavigate()
+  const goToFlight = (element) =>{
+    navigate(`/flight/${element.id}?des=${element.destination}`)
+  }
   return (
     <div className="h_second_container">
       <div className="container">
@@ -11,7 +16,7 @@ const HomeSecond = () => {
         <ul className="h_second_data">
           {suggestedFlight.map((element) => {
             return (
-              <li className="second_data_wrapper" key={element.id}>
+              <li className="second_data_wrapper" key={element.id} onClick={()=> goToFlight(element)}>
                 <div className="second_data_item">
                   <div className="second_data_right">
                     {element.special && (

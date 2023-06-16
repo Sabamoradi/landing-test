@@ -13,7 +13,7 @@ function App() {
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/flight" element={<Flight />} />
+          <Route path="/flight/:id" element={<Flight />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>

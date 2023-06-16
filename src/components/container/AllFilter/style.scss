@@ -20,6 +20,21 @@
         background-color: $white;
         border-radius: 50%;
         border: 1px solid $gray-cs;
+        position: relative;
+        &.checked{
+          padding: 10px;
+          &::after{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 0;
+            top: 0;
+            transform: translate(50%,50%);
+            background-color: $blue;
+            border-radius: 50%;
+          }
+        }
       }
       p {
         padding-right: 10px;
