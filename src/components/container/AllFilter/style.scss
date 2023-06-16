@@ -1,0 +1,53 @@
+@import "src/styles/constants.scss";
+
+.filter_wrapper {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  .white_card_top {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    .white-top_item {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      span {
+        width: 18px;
+        height: 18px;
+        background-color: $white;
+        border-radius: 50%;
+        border: 1px solid $gray-cs;
+      }
+      p {
+        padding-right: 10px;
+        font-size: 14px;
+        color: $black-16;
+      }
+    }
+  }
+  .white_card-bottom{
+    display: flex;
+    gap: 10px;
+  }
+  .input-card{
+    width: 20%;
+  }
+}
+@media (max-width: 767px){
+  .home_white_card{
+    height: fit-content !important;
+  }
+  .filter_wrapper{
+    margin-bottom: 10px;
+  }
+  .white_card-bottom{
+    flex-direction: column;
+    
+    .input-card{
+      width: 100%;
+    }
+  }
+}

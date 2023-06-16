@@ -291,4 +291,30 @@ export const HotelData = [
     price:'۵۸۳,۰۰۰'
   },
 ]
-
+export const filterHomeThird = [
+  {
+    id: 1,
+    title: "مشهد",
+    category:'mashhad',
+  },
+  {
+    id: 2,
+    title: "کیش",
+    category:'kish',
+  },
+  {
+    id: 3,
+    title: "تهران",
+    category:'tehran',
+  },
+  {
+    id: 4,
+    title: "اصفهان",
+    category:'esfehan',
+  },
+  {
+    id: 4,
+    title: "شیراز",
+    category:'shiraz',
+  },
+];

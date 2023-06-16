@@ -1,6 +1,6 @@
 import "./style.scss";
 import Filter from "../../../../components/Filter";
-import { filterHomeHotel } from "../../../../mock";
+import { filterHomeHotel,filterHomeThird } from "../../../../mock";
 import { useState } from "react";
 import { StarIcon } from "../../../../assets/icons";
 
@@ -24,7 +24,7 @@ const HomeThird = () => {
       <div className="container">
         <div className="home_t_title">هتل‌های پیشنهادی</div>
         <Filter
-          items={filterHomeHotel}
+          items={filterHomeThird}
           selectFilter={selectFilter}
           selectItem={selectItem}
         />

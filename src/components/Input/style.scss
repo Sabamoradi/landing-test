@@ -1,27 +1,40 @@
 @import "src/styles/constants.scss";
 
-.input_wrapper{
+.input_wrapper {
+  width: 100%;
+  display: flex;
+  border: solid 1px $gray-e;
+  align-items: center;
+  padding-right: 12px;
+  position: relative;
+
+  input {
+    font-family: IRANYekanNum !important;
+    padding: 10px 12px;
+    border-radius: 4px;
     width: 100%;
-    display: flex;
-    border: solid 1px $gray-e;
-    align-items: center;
-    padding-right: 12px;
-    
-    input{
-        font-family: IRANYekanNum !important;
-        padding: 10px 12px;
-        border-radius: 4px;
-        width: 100%;
-        border-color: transparent;
+    border-color: transparent;
+    transition: all .3s;
+    &:focus-visible {
+      outline: none !important;
     }
-    .btn_input{
-        font-size: 14px;
-        background-color: transparent;
-        border-color: transparent;
-        font-family: IRANYekanNum !important;
-        &:focus-visible{
-            outline: none !important;
-            border-color: none;
-        }
-    }
+  }
+
+  .btn_input {
+    font-size: 14px;
+    background-color: transparent;
+    border-color: transparent;
+    font-family: IRANYekanNum !important;
+  }
+  label {
+    position: absolute;
+    transition: all .3s;
+    background-color: $white;
+    padding: 0 3px;
+    font-size: 12px;
+  }
+}
+input:focus + label {
+  top: -8px;
+  
 }
